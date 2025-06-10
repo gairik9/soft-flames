@@ -26,7 +26,7 @@ const Products = () => {
                 <h3 className="text-[24px] lg:text-[34px] font-medium mt-4 font-playfair">
                   {product.title}
                 </h3>
-                <p className="mt-2 text-[16px] lg:text-[16px] text-justify font-outfit text-gray-700">
+                <p className="mt-2 text-[16px] lg:text-[16px] text-justify font-outfit font-light text-gray-500">
                   {product.description}
                 </p>
               </div>
