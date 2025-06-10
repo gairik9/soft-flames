@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url('img_10.jpg')] bg-cover bg-center bg-no-repeat h-screen font-outfit">
+    <section className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-[url('/img_10.jpg')] bg-cover bg-center bg-no-repeat h-screen font-outfit">
       <div className="flex flex-col items-center justify-center my-20">
         <h1 className="text-6xl lg:text-[10rem] p-2 uppercase font-bold font-playfair text-white">
           SoftFlames
