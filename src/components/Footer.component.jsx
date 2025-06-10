@@ -12,15 +12,18 @@ const Footer = () => {
             </div>
           </a>
           <p className="mt-6 text-[14px] font-outfit">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            At SoftFlames, we believe in crafting more than just candles — we
+            create moments of calm, comfort, and connection. Each product is
+            hand-poured with care, using premium ingredients and unique
+            fragrances to turn any space into a sanctuary. Light up your
+            everyday with warmth and intention.
           </p>
         </div>
         <div className="flex-1 flex items-start md:justify-end gap-20">
           <div>
-            <h2 className="font-semibold mb-5 text-gray-800 text-[16px]">Company</h2>
+            <h2 className="font-semibold mb-5 text-gray-800 text-[16px]">
+              Company
+            </h2>
             <ul className="text-[14px] space-y-2 font-medium">
               <li>
                 <a href="#">Home</a>
@@ -37,16 +40,18 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="font-semibold mb-5 text-gray-800 text-[16px]">Get in touch</h2>
+            <h2 className="font-semibold mb-5 text-gray-800 text-[16px]">
+              Get in touch
+            </h2>
             <div className="text-[14px] space-y-2 font-medium">
-              <p>+1-212-456-7890</p>
+              <p>+91-7896190684</p>
               <p>softflames@gmail.com</p>
             </div>
           </div>
         </div>
       </div>
       <p className="pt-4 text-center text-[14px] space-y-2 font-medium pb-5">
-        Copyright 2024 © Company name. All Right Reserved.
+        Copyright 2025 © SoftFlames. All Right Reserved.
       </p>
     </footer>
   );

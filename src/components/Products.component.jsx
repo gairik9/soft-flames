@@ -3,7 +3,7 @@ import { PRODUCT_CONTENT } from "../constants/data";
 
 const Products = () => {
   return (
-    <section className="w-[90%] mx-auto ">
+    <section id="products" className="w-[90%] mx-auto ">
       <div className="my-20 md:my-40">
         <h2 className="text-3xl lg:text-[56px] font-outfit font-medium text-center">
           Our Candle Collection

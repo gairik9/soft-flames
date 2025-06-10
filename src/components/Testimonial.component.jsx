@@ -8,7 +8,7 @@ const Testimonial = () => {
         "The lavender vanilla candle has transformed my home into a peaceful sanctuary. The scent lasts for hours!",
       name: "Sarah Johnson",
       role: "Interior Designer",
-      stars: 5,
+      stars: 3,
       image:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100",
     },
@@ -35,11 +35,12 @@ const Testimonial = () => {
   ];
 
   const renderStars = (count) => {
-    return Array(count)
-      .fill()
-      .map((_, i) => (
+    const stars = [];
+    // Add filled stars
+    for (let i = 0; i < count; i++) {
+      stars.push(
         <svg
-          key={i}
+          key={`filled-${i}`}
           width="16"
           height="15"
           viewBox="0 0 16 15"
@@ -51,11 +52,32 @@ const Testimonial = () => {
             fill="#22c55e"
           />
         </svg>
-      ));
+      );
+    }
+    // Add outlined stars for the remaining
+    for (let i = count; i < 5; i++) {
+      stars.push(
+        <svg
+          key={`outlined-${i}`}
+          width="16"
+          height="15"
+          viewBox="0 0 16 15"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.524.464a.5.5 0 0 1 .952 0l1.432 4.41a.5.5 0 0 0 .476.345h4.637a.5.5 0 0 1 .294.904L11.563 8.85a.5.5 0 0 0-.181.559l1.433 4.41a.5.5 0 0 1-.77.559L8.294 11.65a.5.5 0 0 0-.588 0l-3.751 2.726a.5.5 0 0 1-.77-.56l1.433-4.41a.5.5 0 0 0-.181-.558L.685 6.123A.5.5 0 0 1 .98 5.22h4.637a.5.5 0 0 0 .476-.346z"
+            stroke="#22c55e"
+            fill="none"
+          />
+        </svg>
+      );
+    }
+    return stars;
   };
 
   return (
-    <div className="my-40 w-[90%] mx-auto">
+    <div id="testimonials" className="my-40 w-[90%] mx-auto">
       <div className="text-center">
         <h1 className="text-3xl lg:text-[56px] font-outfit font-medium text-center">
           What Our Customers Say
@@ -84,7 +106,9 @@ const Testimonial = () => {
               <div className="flex items-center justify-center mt-3 gap-1">
                 {renderStars(testimonial.stars)}
               </div>
-              <p className="text-[14px] tracking-tight md:text-[18px] font-outfit mt-3 text-gray-500">{testimonial.quote}</p>
+              <p className="text-[14px] tracking-tight md:text-[18px] font-outfit mt-3 text-gray-400">
+                {testimonial.quote}
+              </p>
               <div className="flex items-center gap-3 mt-4">
                 <img
                   className="h-18 w-18 rounded-full object-cover"

@@ -3,10 +3,10 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Navbar = () => {
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Products", path: "/" },
-    { name: "Portfolio", path: "/" },
-    { name: "About", path: "/" },
+    { name: "Home", path: "#" },
+    { name: "Products", path: "#products" },
+    { name: "Testimonials", path: "#testimonials" },
+    { name: "About", path: "#" },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
