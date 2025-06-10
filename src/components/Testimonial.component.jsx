@@ -84,7 +84,7 @@ const Testimonial = () => {
               <div className="flex items-center justify-center mt-3 gap-1">
                 {renderStars(testimonial.stars)}
               </div>
-              <p className="text-[18px] font-outfit mt-3 text-gray-500">{testimonial.quote}</p>
+              <p className="text-[14px] tracking-tight md:text-[18px] font-outfit mt-3 text-gray-500">{testimonial.quote}</p>
               <div className="flex items-center gap-3 mt-4">
                 <img
                   className="h-18 w-18 rounded-full object-cover"

@@ -14,7 +14,7 @@ const CandleCallToAction = () => {
   return (
     <div className="my-20 w-[90%] mx-auto">
       <div className="flex flex-col items-center gap-8 bg-gray-50 py-26 px-4 w-full text-center shadow-lg rounded-2xl ">
-        <h1 className="ttext-3xl lg:text-[56px] font-outfit font-medium text-center">
+        <h1 className="text-3xl lg:text-[56px] font-outfit font-medium text-center">
           Illuminate Your Space Today!
         </h1>
         <p className="max-w-5xl text-green-600 mt-4 text-[14px] md:text-[16px]">
