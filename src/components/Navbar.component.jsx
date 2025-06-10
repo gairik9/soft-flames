@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const navLinks = [
@@ -43,13 +43,16 @@ const Navbar = () => {
           <a
             key={i}
             href={link.path}
-            // className="group flex flex-col gap-0.5 text-[16px] text-gray-700 hover:text-gray-800 font-medium uppercase font-outfit"
             className={`group flex flex-col gap-0.5 text-[16px]  font-medium uppercase font-outfit ${
               isScrolled ? "text-gray-700 hover:text-gray-800" : "text-white"
             }`}
           >
             {link.name}
-            <div className="bg-black h-0.5 w-0 group-hover:w-full transition-all duration-300" />
+            <div
+              className={` h-0.5 w-0 group-hover:w-full transition-all duration-300 font-outfit ${
+                isScrolled ? "bg-black" : "bg-white"
+              }`}
+            />
           </a>
         ))}
         <button
@@ -62,7 +65,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Right */}
-      <div className="hidden md:flex items-center gap-6">
+      {/* <div className="hidden md:flex items-center gap-6">
         <FaInstagram
           size={24}
           className={`cursor-pointer hover:text-gray-600 font-bold  ${
@@ -81,6 +84,66 @@ const Navbar = () => {
             isScrolled ? "text-black" : " text-white"
           }`}
         />
+        <FaWhatsapp
+          size={24}
+          className={`cursor-pointer hover:text-gray-600 font-bold  ${
+            isScrolled ? "text-black" : " text-white"
+          }`}
+        />
+      </div> */}
+
+      <div className="hidden md:flex items-center gap-6">
+        <a
+          href="https://www.instagram.com/soft.flames__/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram
+            size={24}
+            className={`cursor-pointer hover:text-gray-600 font-bold  ${
+              isScrolled ? "text-black" : " text-white"
+            }`}
+          />
+        </a>
+
+        <a
+          href="https://www.facebook.com/share/1AXEzpBMwb/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook
+            size={24}
+            className={`cursor-pointer hover:text-gray-600 font-bold  ${
+              isScrolled ? "text-black" : " text-white"
+            }`}
+          />
+        </a>
+
+        <a
+          href="https://www.youtube.com/@softflames/shorts"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaYoutube
+            size={24}
+            className={`cursor-pointer hover:text-gray-600 font-bold  ${
+              isScrolled ? "text-black" : " text-white"
+            }`}
+          />
+        </a>
+
+        <a
+          href="https://wa.me/7896190684?text=Hi%20there!%20I%20just%20checked%20out%20Soft%20Flames%20and%20I%20loved%20it!%20🔥"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp
+            size={24}
+            className={`cursor-pointer hover:text-gray-600 font-bold  ${
+              isScrolled ? "text-black" : " text-white"
+            }`}
+          />
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -138,7 +201,7 @@ const Navbar = () => {
           New Launch
         </button>
 
-        <div className="flex items-center gap-6 pt-20">
+        {/* <div className="flex items-center gap-6 pt-20">
           <FaInstagram
             size={24}
             className="cursor-pointer hover:text-gray-600 font-bold"
@@ -151,6 +214,55 @@ const Navbar = () => {
             size={24}
             className="cursor-pointer hover:text-gray-600 font-bold"
           />
+          <FaWhatsapp
+            size={24}
+            className="cursor-pointer hover:text-gray-600 font-bold"
+          />
+        </div> */}
+        <div className="flex items-center gap-6 pt-20">
+          <a
+            href="https://www.instagram.com/soft.flames__/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram
+              size={24}
+              className="cursor-pointer hover:text-gray-600 font-bold"
+            />
+          </a>
+
+          <a
+            href="https://www.facebook.com/share/1AXEzpBMwb/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook
+              size={24}
+              className="cursor-pointer hover:text-gray-600 font-bold"
+            />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@softflames/shorts"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube
+              size={24}
+              className="cursor-pointer hover:text-gray-600 font-bold"
+            />
+          </a>
+
+          <a
+            href="https://wa.me/123456789?text=Hi%20there!%20I%20just%20checked%20out%20Soft%20Flames%20and%20I%20loved%20it!%20🔥"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp
+              size={24}
+              className="cursor-pointer hover:text-gray-600 font-bold"
+            />
+          </a>
         </div>
       </div>
     </nav>
